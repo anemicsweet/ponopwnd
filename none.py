@@ -5,7 +5,7 @@ from pylatex import *
 
 geometry_options = {"tmargin": "1cm", "lmargin": "5cm"}
 doc = Document(geometry_options=geometry_options)
-
+doc.add_color("red","red","red")
 with doc.create(Section('Psalm 1')):
     psalm1.splitlines()
     for line in (psalm1):
